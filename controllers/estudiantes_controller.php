@@ -65,7 +65,7 @@ class estudiantesController implements IController
 
     public function update($id,$estudianteModel)
     {
-        $sql = "uptade estudiantes set";
+        $sql = "update estudiantes set";
         $sql .= "codigo='" . $estudianteModel->get ('codigo') . "',";
         $sql .= "nombres='" . $estudianteModel->get ('nombres') . "',";
         $sql .= "apellidos='" . $estudianteModel->get ('apellidos') . "',";
@@ -79,7 +79,7 @@ class estudiantesController implements IController
 
     public function delete($id)
     {
-        $sql = "delte from estudiantes where id =". $id;
+        $sql = "delete from estudiantes where id =". $id;
         $conexionDB = new ConexionDB();
         $resultQuery = $conexionDB -> getResultQuery($sql);
         $conexionDB->close();
