@@ -5,7 +5,7 @@ use controllers\IController;
 use db\ConexionDB;
 use models\Estudiante;
 
-class estudiantesController implements IController
+class EstudiantesController implements IController
 {
 
     public function list()
