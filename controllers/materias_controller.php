@@ -5,7 +5,7 @@ use controllers\MController;
 use db\ConexionDB;
 use models\Materia;
 
-class MateriaController implements MController
+class materiaController implements MController
 {
 
     public function list()
@@ -57,11 +57,11 @@ class MateriaController implements MController
         return $resultQuery;
     }
 
-    public function update($id,$materiaModel)
+    public function update($id,$materiasModel)
     {
-        $sql = "update materias set";
+        $sql = "update materia set";
         $sql .= "codigo='" . $materiaModel->get ('codigo') . "',";
-        $sql .= "nombre='" . $materiaModel->get ('nombres') . "',";
+        $sql .= "nombre='" . $materiaModel->get ('nombre') . "',";
         $sql .= "where id=" . $id;
         $conexionDB = new ConexionDB();
         $resultQuery = $conexionDB->getResultQuery($sql);
