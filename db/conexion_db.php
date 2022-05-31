@@ -8,6 +8,7 @@ class ConexionDB
 {
     private $servidorDB = "localhost:3306";
     private $nombreDB = "estudiantes_db";
+    private $nombresDB = "materias_db";
     private $usuarioDB = "root";
     private $password = "";
 
