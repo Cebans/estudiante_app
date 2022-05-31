@@ -7,7 +7,8 @@ require_once dirname(__DIR__) . '/estudiante_app/controllers/estudiantes_control
 
 use controllers\EstudianteController;
 
-$estudianteController = new EstudiantesController();
+
+$estudianteController = new EstudianteController();
 $id = empty($_GET['idE']) ? 0 : $_GET['idE'];
 $resultado = $estudianteController->delete($id);
 ?>

@@ -9,7 +9,7 @@ require_once dirname(__DIR__) . '/estudiantes_app/controllers/Estudiantes_contro
 use controllers\EstudianteController;
 use models\Estudiante;
 
-$estudianteController = new estudiantesController();
+$estudianteController = new estudianteController();
 
 $estudiante = new Estudiante();
 $estudiante->set('codigo',$_POST['codigoInput']);

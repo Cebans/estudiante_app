@@ -5,7 +5,7 @@ use controllers\IController;
 use db\ConexionDB;
 use models\Estudiante;
 
-class EstudiantesController implements IController
+class EstudianteController implements IController
 {
 
     public function list()
@@ -85,4 +85,5 @@ class EstudiantesController implements IController
         $conexionDB->close();
         return $resultQuery;
     }
+
 }
